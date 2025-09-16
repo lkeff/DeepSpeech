@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: DeepSpeech.py",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/DeepSpeech.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: transcribe.py",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/transcribe.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": ["--model", "path/to/your/model.pbmm", "--scorer", "path/to/your/scorer.scorer", "--audio", "path/to/your/audio.wav"]
+    },
+    {
+      "name": "Python: evaluate.py",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/evaluate.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": ["--test_files", "path/to/your/test_files.csv", "--test_batch_size", "1"]
+    },
+    {
+      "name": "Python: lm_optimizer.py",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/lm_optimizer.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": ["--alphabet", "path/to/your/alphabet.txt", "--lm", "path/to/your/lm.binary", "--vocab", "path/to/your/vocab.txt"]
+    }
+  ]
+}
